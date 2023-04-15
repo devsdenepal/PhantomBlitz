@@ -1,0 +1,4 @@
+PyBackDoor
+----------
+OS INFO 
+ [OS INFO] client_name: ANIL KUMAR <-> client_os: uname_result(system='Windows', node='Developers-pc', release='10', version='10.0.19044', machine='AMD64')
