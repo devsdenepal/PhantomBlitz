@@ -36,7 +36,6 @@ jobs:
           token: ${{ secrets.SECRET_TOKEN }}
 
       - name: Include commit history in README
-        uses: stefanzweifel/markdown-magic-action@v2
         with:
           files: README.md
           transforms: |
