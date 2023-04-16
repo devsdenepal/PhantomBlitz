@@ -1,8 +1,9 @@
-import os
+import subprocess
 import time
-def analyze_lan_traffic(delay):
+def analyze_lan_traffic(delay,filename):
     statement = 'Starting Trace Capture...'
-    os.system('netsh trace start capture=yes tracefile=tracefile.etl')
+    subprocess.run(['netsh', 'trace', 'start', 'capture=yes', 'tracefile='+filename], capture_output=True)
     time.sleep(delay)
     statement = 'Stopping Trace...'
-    os.system('netsh trace stop')
+    subprocess.run(['netsh', 'trace', 'stop'], capture_output=True)
+    return statement
