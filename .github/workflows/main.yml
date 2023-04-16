@@ -14,33 +14,17 @@ jobs:
 
       - name: Log recent commits in commit-history.md
         run: |
-          git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' > commit-history.md
+          git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)\n' >> commit-history.md
 
       - name: Commit changes
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "bot anons"
           git add commit-history.md
-          git commit -m "Generate commit-history.md" || echo "No changes to commit"
-
-      - name: Update README
-        uses: stefanzweifel/git-auto-commit-action@v4
+          git commit -m "Append recent commits to commit-history.md" || echo "No changes to commit"
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
         with:
-          commit_message: Update README with commit history
-          commit_options: '--no-verify'
-          files: README.md
           branch: main
-          push: true
-          commit_user_name: bot anons
-          commit_user_email: actions@github.com
-          token: ${{ secrets.SECRET_TOKEN }}
-
-      - name: Include commit history in README
-        with:
-          files: README.md
-          transforms: |
-            <!-- AUTO-GENERATED-CONTENT:START (history) -->
-            ```markdown
-            <!-- include: commit-history.md -->
-            ```
-            <!-- AUTO-GENERATED-CONTENT:END -->
+          github_token: ${{ secrets.SECRET_TOKEN }}
