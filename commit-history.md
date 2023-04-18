@@ -11,3 +11,4 @@
 * f404a07 - (12 seconds ago) Update README.md and add disclaimer - Dev. Gautam Kumar (grafted, HEAD -> main, origin/main)
 * a61d137 - (13 seconds ago) Create terms-and-conditions.md - Dev. Gautam Kumar (grafted, HEAD -> main, origin/main)
 * bfd989c - (16 seconds ago) Update t&c link - Dev. Gautam Kumar (grafted, HEAD -> main, origin/main)
+* 1327bda - (14 seconds ago) remove \n in md syntax - Dev. Gautam Kumar (grafted, HEAD -> main, origin/main)\n
