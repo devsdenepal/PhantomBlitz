@@ -6,4 +6,4 @@ The tool creates a .exe file which runs as a background and creates a reverse TC
 
 Please use this tool at your own risk and with the appropriate permissions from the system owners. Any actions taken with this tool are the sole responsibility of the user.
 
-By using this tool, you agree to the <a href = "https://github.com/devsdenepal/PhantomBlitz/terms-and-conditions.md">```terms and conditions```</a> outlined above and acknowledge that any misuse of this tool is strictly prohibited.
+By using this tool, you agree to the <a href = "https://github.com/devsdenepal/PhantomBlitz/blob/main/terms-and-conditions.md">```terms and conditions```</a> outlined above and acknowledge that any misuse of this tool is strictly prohibited.
