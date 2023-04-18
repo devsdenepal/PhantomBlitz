@@ -1,4 +1,45 @@
-# PhantomBlitz (coming soon)
+ # PhantomBlazer
+
+**PhantomBlazer is a Python-based framework that creates an executable file with various parameters. It allows users to perform a reverse TCP connection and execute cmd commands.**
+## Features
+
+- [x] Reverse TCP connection
+- [x] Execute cmd commands
+- [x] Collect OS info
+- [x] Set clipboard text
+- [x] Get clipboard text
+- [x] Take screenshot
+- [x] Start file server
+- [x] Analyze LAN traffic
+- [x] Type text
+- [x] Download URL
+- [x] Open link
+- [x] Generate WLAN profile
+
+## Usage
+
+PhantomBlazer can be executed with the following parameters:
+```
+    --lhost/-lh: The local host IP address
+    --lport/-lp: The local port number
+    --output/-o: The output file name
+```
+> Example: ``` $python3 phantomblazer.py --lhost 192.168.0.1 --lport 8080 --output payload.exe```
+
+### Inbuilt ommands can be executed using the following syntax:
+```
+    collect-os-info
+    set clipboard <text>
+    get clipboard
+    take screenshot
+    start file server
+    analyze lan traffic
+    type <text>
+    download <url>
+    open link <link>
+    generate wlan profile *
+    generate wlan profile <name>
+```
 ## DISCLAIMER:
 This tool is intended for legal and ethical use only. The creator of this tool is not responsible for any illegal or unethical use of this tool.
 
