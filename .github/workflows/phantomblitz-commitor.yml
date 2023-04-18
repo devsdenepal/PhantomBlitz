@@ -1,0 +1,29 @@
+name: Generate Tree Readme
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Log recent commits in commit-history.md
+        run: |
+          git log --graph --abbrev-commit --decorate --date=relative --format=format:'\n%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' >> commit-history.md
+      - name: Commit changes
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name bot anons
+          git add commit-history.md
+          git commit -m "Append recent commits to commit-history.md" || echo "No changes to commit"
+          
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          branch: main
+          github_token: ${{ secrets.SECRET_TOKEN }}
