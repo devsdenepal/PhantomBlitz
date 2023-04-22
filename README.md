@@ -1,6 +1,6 @@
- # PhantomBlazer
+ # PhantomBlitz
 
-**PhantomBlazer is a Python-based framework that creates an executable file with various parameters. It allows users to perform a reverse TCP connection and execute cmd commands.**
+**PhantomBlitz is a Python-based framework that creates an executable file with various parameters. It allows users to perform a reverse TCP connection and execute cmd commands.**
 ## Features
 
 - [x] Reverse TCP connection
