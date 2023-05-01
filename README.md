@@ -18,6 +18,7 @@
 - [x] Download URL
 - [x] Open link
 - [x] Generate WLAN profile
+- [x] Keylogger
 ## Requirements
 > Same platform as the client
 ## Usage
