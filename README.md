@@ -1,7 +1,9 @@
  # PhantomBlitz
-![image](https://user-images.githubusercontent.com/111997815/235362152-3e1d20cc-549b-4cc1-8856-0383829760dd.png)
+![image](https://user-images.githubusercontent.com/111997815/235445673-e72f087d-ce6f-4737-a1eb-f36e1fcf4aad.png)
 
 **PhantomBlitz is a Python-based framework that creates an executable file with various parameters. It allows users to perform a reverse TCP connection and execute cmd commands.**
+> **IMPORTANT**:```⚠ DETECTABLE BY AV AND WINDOWS```
+![VIRUS-TOTAL-SCREENSHOT](https://github.com/devsdenepal/PhantomBlitz/blob/main/341264188_211432421592581_4782327762530171716_n.png?raw=true)
 ## Features
 
 - [x] Reverse TCP connection
