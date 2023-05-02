@@ -12,6 +12,7 @@ YELLOW = "\033[33m"
 BLUE = "\033[34m"
 MAGENTA = "\033[35m"
 CYAN = "\033[36m"
+print("[!] WARNING: BUILD FOR THE SAME PLATFORM IS  CURRENTLY AVAILBE")
 def build_with_pyinstaller(filename):
     if not os.path.exists(filename):
         print(f"{filename} does not exist")

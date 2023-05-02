@@ -1,6 +1,2 @@
 argparse
-subprocess
-socket
-sys
-shutil
 PyInstaller
