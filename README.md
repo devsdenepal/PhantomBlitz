@@ -21,7 +21,7 @@
 - [x] Keylogger
 ## Requirements
 > Same platform as the client
-```python3 -m pip install -r requirements.txt
+```python3 -m pip install -r requirements.txt```
 ## Usage
 
 PhantomBlazer can be executed with the following parameters:
