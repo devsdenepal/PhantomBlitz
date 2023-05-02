@@ -46,7 +46,9 @@ PhantomBlazer can be executed with the following parameters:
     open link <link>
     generate wlan profile *
     generate wlan profile <name>
+    start keylogging
 ```
+> To view captured use ```start file server``` for remote file service , the server will be on the client's address
 ## DISCLAIMER:
 This tool is intended for legal and ethical use only. The creator of this tool is not responsible for any illegal or unethical use of this tool.
 
