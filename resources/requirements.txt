@@ -1,8 +1,6 @@
-pyautogui
 argparse
-Pillow
-pyperclip
-win32api
-keyboard
-urllib
-webbrowser
+subprocess
+socket
+sys
+shutil
+PyInstaller
