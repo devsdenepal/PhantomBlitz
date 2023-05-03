@@ -1,3 +1,7 @@
 resources/*
 build/*
 dist/*
+*.exe
+*.spec
+%payload%
+%test%
