@@ -3,5 +3,5 @@ build/*
 dist/*
 *.exe
 *.spec
-%payload%
-%test%
+*payload*
+*test*
