@@ -2,6 +2,8 @@
 ![image](https://user-images.githubusercontent.com/111997815/235445673-e72f087d-ce6f-4737-a1eb-f36e1fcf4aad.png)
 
 **PhantomBlitz is a Python-based framework that creates an executable file with various parameters. It allows users to perform a reverse TCP connection and execute cmd commands.**
+## DISCLAIMER:
+This tool is intended for legal and ethical use only. The creator of this tool is not responsible for any illegal or unethical use of this tool.
 > **IMPORTANT**:```PLEASE USE WINDOWS FOR PAYLOAD FILE GENERATION ⚠ DETECTABLE BY AV AND WINDOWS```
 ![VIRUS-TOTAL-SCREENSHOT](https://github.com/devsdenepal/PhantomBlitz/blob/main/341264188_211432421592581_4782327762530171716_n.png?raw=true)
 ## Features
@@ -50,8 +52,7 @@ PhantomBlazer can be executed with the following parameters:
     start keylogging
 ```
 > To view captured use ```start file server``` for remote file service , the server will be on the client's address
-## DISCLAIMER:
-This tool is intended for legal and ethical use only. The creator of this tool is not responsible for any illegal or unethical use of this tool.
+
 
 The tool creates a .exe file which runs as a background and creates a reverse TCP connection, allowing for remote command execution. This tool is intended for debugging purposes and should not be used to gain unauthorized access to systems.
 
